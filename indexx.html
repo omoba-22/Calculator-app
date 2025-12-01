@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <nav>
+                <input type="checkbox" id="menu">
+                <label for="menu" class="menu-btn">
+                    <span class="iconwrapper">
+                        <span class="icon">☰</span>
+                    </span>
+                    <span class="mode"> standard</span>
+                </label>
+                <label for="menu" class="overlay"></label>
+                <div class="sidebar">
+                    <div></div>
+                        <ul>
+                            <h4>Calculator</h4>
+                            <li class="active">Standard</li>
+                            <li>Scientific</li>
+                            <li>Graphing</li>
+                            <li>Programmer</li>
+                            <li>Date calculation</li>
+                        </ul>
+                        <ul>
+                            <h4>Converter</h4>
+                            <li>Currency</li>
+                            <li>Volume</li>
+                            <li>Length</li>
+                            <li>Weight and mass</li>
+                            <li>Temperature</li>
+                            <li>Energy</li>
+                            <li>Area</li>
+                            <li>Speed</li>
+                            <li>Time</li>
+                            <li>Power</li>
+                            <li>Data</li>
+                            <li>Pressure</li>
+                            <li>Angle</li>
+                        </ul>
+                        <ul>
+                            <li>Settings</li>
+                        </ul>
+                </div>
+            </nav>
+            <main>
+                <div><input type="text" id="subscreen"></div>
+                <div class="screen"> <input type="text" value="0" id="result"></div>
+                <div class="top">
+                    <div class="func">MC</div>
+                    <div class="func">MR</div>
+                    <div class="func">M +</div>
+                    <div class="func">M -</div>
+                    <div class="func">MS</div>
+                </div>
+                <div class="bottom">
+                    <button class="digit dark" onclick="clickIn('%')">%</button>
+                    <button class="digit dark" onclick="clickIn('CE')"> CE</button>
+                    <button class="digit dark" onclick="clickIn('C')">C</button>
+                    <button class="digit dark" onclick="clickIn('⌫')">
+                        ⌫   
+                    </button>
+                    <button class="digit dark" onclick="clickIn('1/x')">1/x</button>
+                    <button class="digit dark" onclick="clickIn('x²')">
+                        x²
+                    </button>
+                   <button class="digit dark" onclick="clickIn('√x')"> √x</button>
+                   <button class="digit dark" onclick="clickIn('÷')">÷</button>
+                   <button class="digit" onclick="clickIn('7')">7</button>
+                   <button class="digit" onclick="clickIn('8')">8</button>
+                   <button class="digit" onclick="clickIn('9')">9</button>
+                   <button class="digit dark" onclick="clickIn('×')">×</button>
+                   <button class="digit" onclick="clickIn('4')">4</button>
+                   <button class="digit" onclick="clickIn('5')">5</button>
+                   <button class="digit" onclick="clickIn('6')">6</button>
+                   <button class="digit dark" onclick="clickIn('-')">-</button>
+                   <button class="digit" onclick="clickIn('1')">1</button>
+                   <button class="digit" onclick="clickIn('2')">2</button>
+                   <button class="digit" onclick="clickIn('3')">3</button>
+                   <button class="digit dark" onclick="clickIn('+')">+</button>
+                   <button class="digit" onclick="clickIn('+/−')">+/−</button>
+                   <button class="digit" onclick="clickIn('0')">0</button>
+                   <button class="digit" onclick="clickIn('-')">−</button>
+                    <button class="digit" onclick="clickIn('=')">=</button>
+                </div>
+            </main>
+        </div>
+        <div class="submain">
+            <div class="tabs">
+                <button class="tab active">History</button>
+                <button class="tab">Memories</button>
+                <div class="tab-underline"></div>
+            </div>
+            
+            <div class="tab-content History active">
+                <p>There's no History yet.</p>
+            </div>
+
+            <div class="tab-content memory">
+                <p>There's nothing saved in yet.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
